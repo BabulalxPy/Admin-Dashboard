@@ -2,30 +2,235 @@
     background-color: rgb(197, 212, 212);
     border: 1px solid;
     height: 100%;
-    padding: 16px;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
-    gap: 16px;
     resize: both;
     overflow: auto;
 }
 .sidebar {
     border: 1px solid green;
+    color: wheat;
+    background-color: rgb(88, 139, 180);
     grid-column: 1;
     grid-row: 1/5;
     display: grid;
-    overflow: auto;
+    grid-template-rows: 80px 260px 150px;
+    
 }
+.dashboard{
+    display: flex;
+    border: 1px solid pink;
+    margin-top: 12px;
+    margin-left: 12px;
+    grid-row: 1 / 2;
+    align-items: center;
+    font-size: x-large;
+}
+.mid_side{
+    border: 1px solid brown;
+    grid-row: 2 / 3;
+}
+li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px 0;
+}
+.end_side{
+    border: 1px solid forestgreen;
+    grid-row: 3 / 4;
+    margin-bottom:
+}
+.svg1{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+svg{
+    fill: wheat;
+    color: wheat;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
 .header{
     border: 1px solid red;
     grid-column: 2/5;
     grid-row: 1;
     display: grid;
+    grid-template-rows: 1fr 1.5fr;
 }
+.first_header{
+    padding: 16px;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr 4fr;
+    gap: 16px;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid rgb(238, 4, 4);
+    grid-column: 1 / 4;
+}
+.search_svg{
+    fill: black;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+#search{
+    background-color: rgb(202, 199, 199);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 600px;
+    height: 20px;
+
+}
+.notification{
+    border: 1px solid black;
+    grid-column: 11 / 12;
+}
+.not_svg{
+    fill: black;
+}
+.login_btn{
+    border: 1px solid black;
+    grid-column: 12 / 13;
+}
+.log_name{
+    border: 1px solid black;
+    grid-column: 13 / 16;
+    font-size: large;
+}
+
+.second_header{
+    padding: 16px;
+    align-items: center;
+    border: 1px solid violet;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 4fr;
+    gap: 16px;
+}
+.logo{
+    margin-left: 12px;
+    border: 1px solid black;
+    grid-column: 1 / 2;
+}
+.intro_lines{
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    width: 250px;
+}
+.intro1{
+    font-size: medium;
+}
+.intro2{
+    font-size: large;
+    font-weight: bold;
+}
+.new{
+    border: 1px solid black;
+    border-radius: 18px;
+    width: max-content;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(25, 115, 218);
+    color: white;
+    grid-column: 6 / 7;
+}
+.upload{
+    border: 1px solid black;
+    border-radius: 18px;
+    width: max-content;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(25, 115, 218);
+    color: white;
+    grid-column: 7 / 8;
+}
+.share{
+    border: 1px solid black;
+    border-radius: 18px;
+    width: max-content;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(25, 115, 218);
+    color: white;
+    grid-column: 8 / 9;
+}
+
 .main {
     border: 1px solid blue;
     grid-column: 2/5;
     grid-row: 2/5;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.projects{
+    border: 1px solid black;
+    background-color: rgb(28, 182, 28);
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+.project_title{
+    padding: 5px;
+    font-size: large;
+}
+.project_list{
+    border: 1px solid black;
+    background-color: coral;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    gap: 16px;
+    padding: 16px;
+}
+.project1, .project2, .project3, .project4, .project5, .project6{
+    border: 1px solid black;
+    background-color: rgb(73, 211, 18);
+    padding: 8px;
+    
+}
+.proj_title1, .proj_title2, .proj_title3, .proj_title4, .proj_title5, .proj_title6{
+    margin-top: 12px;
+    margin-left: 8px;
+    font-size: medium;
+    font-weight: bold;
+}
+.proj_info1, .proj_info2, .proj_info3, .proj_info4, .proj_info5, .proj_info6{
+    margin-left: 8px;
+    width: fit-content;
+}
+.proj_option1, .proj_option2, .proj_option3, .proj_option4, .proj_option5, .proj_option6{
+    border: 1px solid red;
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+.star, .eye, .edit{
+    border: 1px solid black;
+    fill: black;
+    padding-inline: 5px;
+}
+
+.anouncements{
+    border: 1px solid black;
+    background-color: rgb(93, 139, 180);
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+.trending{
+    border: 1px solid black;
+    background-color: rgb(211, 120, 93);
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
 }
